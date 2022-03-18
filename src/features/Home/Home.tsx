@@ -3,6 +3,7 @@ import BoxFeatured from "./BoxFeatured";
 import BoxPrice from "./BoxPrice";
 import BoxService from "./BoxService";
 import { BOX_SERVICES_DATA, PRICES_DATA } from "./data";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -40,6 +41,7 @@ function Home() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
