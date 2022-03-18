@@ -1,4 +1,10 @@
 function Home() {
-  return <h1>home</h1>;
+  return (
+    <div className="">
+      <div className="grid lg:grid-cols-auto-1fr">
+        <div className=""></div>
+      </div>
+    </div>
+  );
 }
 export default Home;
