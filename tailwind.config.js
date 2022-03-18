@@ -7,6 +7,8 @@ const Colors = {
   "k-done": "#666",
   "k-secondtext": "#374754",
   "k-lightgray": "#f4f4f4",
+  "k-gray": "#dedede",
+  "k-black": "#111111",
 };
 module.exports = {
   mode: "jit",
@@ -24,6 +26,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         "auto-1fr": "auto 1fr",
+      },
+      boxShadow: {
+        price: "0px 13px 19px 0px #00000012",
       },
     },
   },

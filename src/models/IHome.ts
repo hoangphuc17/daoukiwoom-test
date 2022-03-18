@@ -17,3 +17,11 @@ export interface IBoxService {
   tags: IBoxServiceTag[];
   i: number;
 }
+
+export interface IBoxPrice {
+  className?: string;
+  name: string;
+  desc: string;
+  price: string;
+  unit: "usd" | "vnd";
+}

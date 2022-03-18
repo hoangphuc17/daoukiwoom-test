@@ -1,7 +1,8 @@
 import classNames from "classnames";
 import BoxFeatured from "./BoxFeatured";
+import BoxPrice from "./BoxPrice";
 import BoxService from "./BoxService";
-import { BOX_SERVICES_DATA } from "./data";
+import { BOX_SERVICES_DATA, PRICES_DATA } from "./data";
 
 function Home() {
   return (
@@ -25,6 +26,20 @@ function Home() {
           {...serviceData}
         />
       ))}
+      <div className="bg-k-lighterblue py-32">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-y-4 md:gap-x-4 xl:gap-x-8 mx-auto max-w-screen-xl">
+          {PRICES_DATA.map((priceData, index) => (
+            <BoxPrice
+              key={`box-price-${index}`}
+              className={classNames("border-2 border-transparent", {
+                "border-k-pink": index === 2,
+                "border-k-pink bg-k-pink": index === 3,
+              })}
+              {...priceData}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

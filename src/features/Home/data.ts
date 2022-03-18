@@ -1,4 +1,4 @@
-import { IBoxService, ITab } from "models/IHome";
+import { IBoxPrice, IBoxService, ITab } from "models/IHome";
 
 export const TABS: ITab[] = [
   {
@@ -119,5 +119,32 @@ export const BOX_SERVICES_DATA: IBoxService[] = [
         desc: "SSL server",
       },
     ],
+  },
+];
+
+export const PRICES_DATA: IBoxPrice[] = [
+  {
+    name: "Free Test",
+    desc: "Organize across all apps by hand",
+    price: "0",
+    unit: "usd",
+  },
+  {
+    name: "Low Price",
+    desc: "Monthly Fixed Amount",
+    price: "200.000",
+    unit: "usd",
+  },
+  {
+    name: "Easy Using Methods",
+    desc: "Various Manuals",
+    price: "200.000",
+    unit: "usd",
+  },
+  {
+    name: "Verified IT Service",
+    desc: "On sale in 4 countries",
+    price: "300.000",
+    unit: "vnd",
   },
 ];
